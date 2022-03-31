@@ -58,6 +58,10 @@ header > h1 {
   margin: 0px;
 }
 
+header > p {
+  color: grey;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -85,4 +89,12 @@ section {
 .child {
   height: 30px;
   padding: 8px;
+}
+
+a > img {
+  transition: 0.2s;
+}
+
+a > img:hover {
+  transform: scale(1.1);
 }
