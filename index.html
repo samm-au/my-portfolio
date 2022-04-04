@@ -16,34 +16,35 @@
   <body>
     <nav class="sticky">
       <ul>
-        <li><a href="#"></a>Home</li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <header>
-      <h3>Hi👋🏻, my name is</h3>
-      <h1>Samantha Au</h1>
-      <p>
-        I'm a Junior Fullstack Developer and a little bit of a Coffee Lover ☕️
-      </p>
-      <div class="parent">
-        <a href="https://github.com/samm-au"
-          ><img
-            src="images/GitHub-Mark-32px.png"
-            alt="github logo"
-            class="child"
-        /></a>
-        <a href="https://www.linkedin.com/in/samantha-au/"
-          ><img src="images/LI-In-Bug.png" alt="linkedin logo" class="child"
-        /></a>
-      </div>
-    </header>
+    <div class="bg">
+      <header>
+        <h3>Hi👋🏻, my name is</h3>
+        <h1>Samantha Au</h1>
+        <p>
+          I'm a Junior Fullstack Developer and a little bit of a Coffee Lover
+          ☕️
+        </p>
+        <div class="parent">
+          <a href="https://github.com/samm-au"
+            ><img
+              src="images/GitHub-Mark-32px.png"
+              alt="github logo"
+              class="child"
+          /></a>
+          <a href="https://www.linkedin.com/in/samantha-au/"
+            ><img src="images/LI-In-Bug.png" alt="linkedin logo" class="child"
+          /></a>
+        </div>
+      </header>
+    </div>
 
     <main>
       <section>
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
           repellat ad iste quibusdam qui fugiat, numquam molestias nemo pariatur
@@ -52,13 +53,28 @@
         </p>
       </section>
       <section>
-        <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-          dolore illo laborum voluptatem nihil voluptatum tempora, ipsam
-          dolorem, ex eos provident placeat maxime? Adipisci saepe magnam
-          delectus ad, tempora suscipit.
-        </p>
+        <h2 id="contact">Get in touch</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="name" required />
+          </div>
+          <div>
+            <label for="emailAddress">Email Address</label>
+            <input type="emailAddress" required />
+          </div>
+          <div>
+            <label for="message">Message:</label><br />
+            <textarea
+              name="message"
+              id=""
+              cols="10"
+              rows="5"
+              placeholder="Type your message here"
+            ></textarea>
+          </div>
+          <button>Submit</button>
+        </form>
       </section>
     </main>
 
