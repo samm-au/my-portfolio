@@ -1,12 +1,15 @@
-@import "design";
-@import "components";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/aboutme";
+@import "modules/navbar";
+@import "design/color-palette";
 
 * {
   font-family: Lato;
 }
 
 body {
-  margin: 0;
+  margin: -3px;
   display: flex;
   flex-direction: column;
 }
