@@ -1,0 +1,56 @@
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 11px;
+  margin-top: -63px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $white;
+  text-shadow: 1px 2px 4px grey;
+}
+
+li {
+  list-style-type: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+a:hover {
+  color: darkgray;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 80px;
+  margin: 0px;
+  color: white;
+}
+
+header > p {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 4px grey;
+  font-size: 24px;
+}
