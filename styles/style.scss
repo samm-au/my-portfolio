@@ -51,35 +51,6 @@ a > img:hover {
   transform: scale(1.1);
 }
 
-label,
-input,
-textarea {
-  display: block;
-}
-
-input,
-textarea {
-  width: 500px;
-  border: none;
-  border-radius: 3px;
-  outline: none;
-  padding: 10px;
-  color: #676767;
-  transition: border 0.5s;
-  -webkit-transition: border 0.5s;
-  -moz-transition: border 0.5s;
-  -o-transition: border 0.5s;
-  border: solid 1px #7e7e7e;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-form > button {
-  display: flex;
-  justify-content: center;
-}
-
 .bg {
   /* The image used */
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
