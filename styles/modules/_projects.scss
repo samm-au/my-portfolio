@@ -1,0 +1,20 @@
+.project__cards > div > img {
+  width: 500px;
+}
+
+.project__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project__info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.desc {
+  position: absolute;
+  width: 400px;
+  right: 50%;
+}
