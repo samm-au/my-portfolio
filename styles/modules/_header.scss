@@ -20,3 +20,25 @@ header > p {
   width: 400px;
   font-family: "PT Serif", serif;
 }
+
+a > img {
+  transition: 0.2s;
+}
+
+a > img:hover {
+  transform: scale(1.1);
+}
+
+.bg {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../images/dmitry-osipenko-_ci4OGjGi4A-unsplash.jpg");
+
+  width: 100%;
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
