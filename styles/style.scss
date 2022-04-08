@@ -4,7 +4,7 @@
 @import "modules/navbar";
 @import "modules/projects";
 @import "design/color-palette";
-
+@import "modules/background-effect";
 * {
   font-family: Lato;
   scroll-behavior: smooth;
@@ -14,7 +14,7 @@ body {
   margin: -3px;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(#a23982, #1f1013);
+  background: radial-gradient(#272727, #1f1013);
   //   -webkit-overflow-y: hidden;
   //   -moz-overflow-y: hidden;
   //   -o-overflow-y: hidden;
