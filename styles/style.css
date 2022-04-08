@@ -66,6 +66,8 @@ footer {
   position: fixed;
   line-height: 65px;
   text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .logo > a > img {
@@ -123,13 +125,6 @@ footer {
 
 .navTrigger {
   display: none;
-}
-
-.nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 /* Media qurey section */
@@ -394,6 +389,9 @@ footer {
 .affix {
   padding: 0;
   background-color: #989898;
+  width: 102%;
+  -webkit-box-shadow: 1px 1px 4px lightgrey;
+          box-shadow: 1px 1px 4px lightgrey;
 }
 
 .project__cards > div > img {
@@ -426,6 +424,7 @@ footer {
 
 * {
   font-family: Lato;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -466,6 +465,7 @@ section {
           align-items: center;
   width: 50%;
   height: 500px;
+  padding-top: 50px;
 }
 
 section > p {
