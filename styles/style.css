@@ -13,6 +13,13 @@ header {
   margin-left: 500px;
 }
 
+header h1 {
+  font-size: 70px;
+  margin: 0px;
+  color: white;
+  font-family: "Merriweather", serif;
+}
+
 header h2 {
   color: #d2d2d2;
   text-shadow: 1px 1px 1px #282828;
@@ -21,17 +28,10 @@ header h2 {
   width: 400px;
 }
 
-header h1 {
-  font-size: 70px;
-  margin: 0px;
-  color: white;
-  font-family: "Merriweather", serif;
-}
-
 header p {
   font-size: 36px;
   margin: 0px;
-  color: #c1c1c1;
+  color: bisque;
   width: 600px;
 }
 
@@ -65,6 +65,18 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#aboutMe {
+  padding-top: 100px;
+  width: 40%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav {
@@ -401,8 +413,12 @@ footer {
           box-shadow: 1px 1px 4px lightgrey;
 }
 
-.project__cards > div > img {
-  width: 500px;
+#projects__section {
+  padding-top: 100px;
+}
+
+#projects__section h2 {
+  width: 200px;
 }
 
 .project__cards {
@@ -410,6 +426,11 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+.project__cards div > img {
+  width: 450px;
+  border-radius: 3px;
 }
 
 .project__info {
@@ -420,13 +441,24 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
+  text-align: left;
+  padding-right: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.desc {
-  position: absolute;
-  width: 400px;
-  right: 50%;
+.project__info p {
+  text-align: left;
+}
+
+.project__info span {
+  padding-right: 10px;
+  color: bisque;
+}
+
+#contact {
+  padding-top: 100px;
 }
 
 .light {
@@ -588,7 +620,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
 }
 
 section {
@@ -599,16 +630,14 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50%;
-  height: 500px;
-  padding-top: 50px;
+  width: 60%;
 }
 
-section > p {
-  text-align: center;
+section h2 {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-bottom: 5px;
+  width: 186px;
 }
 
 .parent {
@@ -619,5 +648,9 @@ section > p {
 .child {
   height: 30px;
   padding: 8px;
+}
+
+h2 {
+  font-size: 36px;
 }
 /*# sourceMappingURL=style.css.map */

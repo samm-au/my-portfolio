@@ -1,20 +1,33 @@
-.project__cards > div > img {
-  width: 500px;
+#projects__section {
+  padding-top: 100px;
+  h2 {
+    width: 200px;
+  }
 }
 
 .project__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  div > img {
+    width: 450px;
+    border-radius: 3px;
+  }
 }
 
 .project__info {
   display: flex;
   flex-direction: column;
-  text-align: right;
-}
+  text-align: left;
+  padding-right: 40px;
+  justify-content: center;
 
-.desc {
-  position: absolute;
-  width: 400px;
-  right: 50%;
+  p {
+    text-align: left;
+  }
+
+  span {
+    padding-right: 10px;
+    color: bisque;
+  }
 }

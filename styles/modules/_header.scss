@@ -4,6 +4,13 @@ header {
   flex-direction: column;
   justify-content: center;
   margin-left: 500px;
+  h1 {
+    font-size: 70px;
+    margin: 0px;
+    color: white;
+    font-family: "Merriweather", serif;
+  }
+
   h2 {
     color: rgb(210, 210, 210);
     text-shadow: 1px 1px 1px rgb(40, 40, 40);
@@ -12,17 +19,10 @@ header {
     width: 400px;
   }
 
-  h1 {
-    font-size: 70px;
-    margin: 0px;
-    color: white;
-    font-family: "Merriweather", serif;
-  }
-
   p {
     font-size: 36px;
     margin: 0px;
-    color: rgb(193, 193, 193);
+    color: bisque;
     width: 600px;
   }
 }
