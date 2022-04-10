@@ -1,22 +1,24 @@
-// @import "modules/header";
-// @import "modules/footer";
-// @import "modules/about-me";
-// @import "modules/navbar";
-// @import "modules/projects";
-// @import "modules/contact";
-// @import "design/color-palette";
-// @import "modules/background-effect";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navbar";
 
-@use "about-me";
-@use "contact";
-@use "header";
-@use "projects";
+@import "sections/about-me";
+@import "sections/projects";
+@import "sections/contact";
 
-@use "footer";
-@use "navbar";
+@import "design/color-palette";
+@import "design/background-effect";
 
-@use "background-effect";
-@use "color-palette";
+// @use "styles/design/_background-effect.scss";
+// @use "styles/design/_color-palette.scss";
+
+// @use "styles/layout/_footer.scss";
+// @use "layout/header";
+// @use "layout/navbar";
+
+// @use "sections/about-me";
+// @use "sections/contact";
+// @use "sections/projects";
 
 * {
   font-family: "Inconsolata", monospace;

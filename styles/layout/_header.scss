@@ -3,7 +3,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 500px;
+  margin-left: 400px;
+
   h1 {
     font-size: 70px;
     margin: 0px;
@@ -23,7 +24,6 @@ header {
     font-size: 36px;
     margin: 0px;
     color: bisque;
-    width: 600px;
   }
 }
 
@@ -47,4 +47,34 @@ a > img:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+// Typewriter effect
+#typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end infinite;
+  width: 100%;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }

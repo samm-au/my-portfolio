@@ -10,7 +10,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 500px;
+  margin-left: 400px;
 }
 
 header h1 {
@@ -32,7 +32,6 @@ header p {
   font-size: 36px;
   margin: 0px;
   color: bisque;
-  width: 600px;
 }
 
 a > img {
@@ -57,6 +56,55 @@ a > img:hover {
   background-size: cover;
 }
 
+#typewriter {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: 0.15em;
+  -webkit-animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end infinite;
+          animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end infinite;
+  width: 100%;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 footer {
   margin-top: auto;
   display: -webkit-box;
@@ -65,23 +113,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#aboutMe {
-  padding-top: 180px;
-  width: 40%;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 100px;
-}
-
-#aboutMe h3 {
-  color: bisque;
 }
 
 .nav {
@@ -416,6 +447,39 @@ footer {
   width: 102%;
   -webkit-box-shadow: 1px 1px 4px lightgrey;
           box-shadow: 1px 1px 4px lightgrey;
+}
+
+#aboutMe {
+  padding-top: 180px;
+  width: 40%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+#aboutMe h3 {
+  color: bisque;
+}
+
+#technologies {
+  padding: 10px;
+}
+
+#technologies img {
+  height: 45px;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#technologies img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #projects__section {

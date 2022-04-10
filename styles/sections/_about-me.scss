@@ -10,3 +10,16 @@
     color: bisque;
   }
 }
+
+#technologies {
+  padding: 10px;
+  img {
+    height: 45px;
+    padding: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
