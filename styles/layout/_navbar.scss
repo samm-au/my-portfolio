@@ -105,7 +105,7 @@
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-.navTrigger {
+.nav__trigger {
   display: none;
   cursor: pointer;
   width: 30px;
@@ -125,7 +125,7 @@
     height: 4px;
   }
 
-  .navTrigger i:nth-child(1) {
+  .nav__trigger i:nth-child(1) {
     -webkit-animation: outT 0.8s backwards;
     animation: outT 0.8s backwards;
     -webkit-animation-direction: reverse;
@@ -146,17 +146,17 @@
   }
 }
 
-.navTrigger.active i:nth-child(1) {
+.nav__trigger.active i:nth-child(1) {
   -webkit-animation: inT 0.8s forwards;
   animation: inT 0.8s forwards;
 }
 
-.navTrigger.active i:nth-child(2) {
+.nav__trigger.active i:nth-child(2) {
   -webkit-animation: inM 0.8s forwards;
   animation: inM 0.8s forwards;
 }
 
-.navTrigger.active i:nth-child(3) {
+.nav__trigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
 }

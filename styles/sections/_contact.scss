@@ -1,4 +1,4 @@
-#contact {
+#contact__section {
   padding-top: 100px;
   display: flex;
   justify-content: center;
@@ -77,7 +77,6 @@
   @include btn-border-drawing(bisque, #b7b7b7, 3px, bottom, right);
 }
 
-//=== Button styling, semi-ignore
 .btn {
   background: none;
   border: none;
