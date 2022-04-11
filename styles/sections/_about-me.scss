@@ -13,13 +13,28 @@
 
 #technologies {
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   img {
     height: 45px;
+    width: 45px;
     padding: 10px;
     transition: 0.2s;
 
     &:hover {
       transform: scale(1.1);
     }
+  }
+
+  .technologies__container {
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    margin: 0px;
+    align-items: center;
+    padding: 14px;
+    font-size: 14px;
   }
 }
