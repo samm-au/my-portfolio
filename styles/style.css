@@ -194,29 +194,25 @@ footer {
   transition: all 0.4s ease;
 }
 
-.logo > a > img {
+.nav img {
   float: left;
   width: 40px;
   padding-left: 3rem;
   padding-top: 1rem;
 }
 
-.nav div.logo a {
+.nav .nav__logo a {
   text-decoration: none;
   color: #fff;
   font-size: 2.5rem;
 }
 
-.nav div.logo a:hover {
-  color: #00e676;
-}
-
-.nav div.main_list {
+.nav .nav__links {
   height: 65px;
   float: right;
 }
 
-.nav div.main_list ul {
+.nav .nav__links ul {
   width: 100%;
   height: 65px;
   display: -webkit-box;
@@ -227,14 +223,14 @@ footer {
   padding: 0;
 }
 
-.nav div.main_list ul li {
+.nav .nav__links ul li {
   width: auto;
   height: 65px;
   padding: 0;
   padding-right: 3rem;
 }
 
-.nav div.main_list ul li a {
+.nav .nav__links ul li a {
   text-decoration: none;
   color: #fff;
   line-height: 65px;
@@ -243,17 +239,13 @@ footer {
   transition: 0.2s;
 }
 
-.nav div.main_list ul li a:hover {
+.nav .nav__links ul li a:hover {
   color: #989898;
-}
-
-.navTrigger {
-  display: none;
 }
 
 /* Media qurey section */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
+  .nav__container {
     margin: 0;
   }
 }
@@ -262,10 +254,10 @@ footer {
   .navTrigger {
     display: block;
   }
-  .nav div.logo {
+  .nav div.nav__logo {
     margin-left: 15px;
   }
-  .nav div.main_list {
+  .nav div.nav__links {
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -274,7 +266,7 @@ footer {
     height: auto;
     display: none;
   }
-  .nav div.main_list ul {
+  .nav div.nav__links ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -288,11 +280,11 @@ footer {
     /*same background color of navbar*/
     background-position: center top;
   }
-  .nav div.main_list ul li {
+  .nav div.nav__links ul li {
     width: 100%;
     text-align: right;
   }
-  .nav div.main_list ul li a {
+  .nav div.nav__links ul li a {
     text-align: center;
     width: 100%;
     font-size: 3rem;
@@ -306,6 +298,7 @@ footer {
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 .navTrigger {
+  display: none;
   cursor: pointer;
   width: 30px;
   height: 25px;
@@ -325,7 +318,7 @@ footer {
   height: 4px;
 }
 
-.navTrigger i:nth-child(1) {
+.navTrigger .navTrigger i:nth-child(1) {
   -webkit-animation: outT 0.8s backwards;
   animation: outT 0.8s backwards;
   -webkit-animation-direction: reverse;
@@ -360,6 +353,14 @@ footer {
 .navTrigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+}
+
+.affix {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 102%;
+  -webkit-box-shadow: 1px 1px 4px lightgrey;
+          box-shadow: 1px 1px 4px lightgrey;
 }
 
 @-webkit-keyframes inM {
@@ -508,14 +509,6 @@ footer {
     -webkit-transform: translateY(-9px) rotate(135deg);
             transform: translateY(-9px) rotate(135deg);
   }
-}
-
-.affix {
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 102%;
-  -webkit-box-shadow: 1px 1px 4px lightgrey;
-          box-shadow: 1px 1px 4px lightgrey;
 }
 
 #aboutMe {
