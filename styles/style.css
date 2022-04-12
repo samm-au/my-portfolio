@@ -604,6 +604,13 @@ footer span {
           align-items: center;
   padding: 14px;
   font-size: 14px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#technologies .technologies__container:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #projects__section {
