@@ -1,6 +1,7 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navbar";
+@import "layout/mixins";
 
 @import "sections/about-me";
 @import "sections/projects";
@@ -9,22 +10,90 @@
 @import "design/color-palette";
 @import "design/background-effect";
 
+$sm: 390px;
+$md: 800px;
+$lg: 1025px;
+
+@mixin phone {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: ($md + 1px)) and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin largeScreen {
+  @media only screen and (min-width: ($lg + 1px)) {
+    @content;
+  }
+}
+
 * {
   font-family: "Inconsolata", monospace;
   scroll-behavior: smooth;
 }
 
 body {
-  margin: -3px;
-  display: flex;
-  flex-direction: column;
-  background: radial-gradient(#272727, #1f1013);
-  -webkit-animation: fadeIn 1 1s ease-out;
-  -moz-animation: fadeIn 1 1s ease-out;
-  -o-animation: fadeIn 1 1s ease-out;
-  animation: fadeIn 1 1s ease-out;
-  color: white;
-  width: 100%;
+  @include phone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(#272727, #1f1013);
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
+    color: white;
+    width: 100%;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(#272727, #1f1013);
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
+    color: white;
+    width: 100%;
+  }
+
+  @include laptop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(#272727, #1f1013);
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
+    color: white;
+  }
+
+  @include largeScreen {
+    margin: -3px;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(#272727, #1f1013);
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
+    color: white;
+    width: 100%;
+  }
 }
 
 main {
