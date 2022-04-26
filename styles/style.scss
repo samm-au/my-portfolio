@@ -44,6 +44,7 @@ $lg: 1025px;
 }
 
 body {
+  margin: 0;
   @include phone {
     display: flex;
     justify-content: center;
@@ -83,7 +84,6 @@ body {
   }
 
   @include largeScreen {
-    margin: -3px;
     display: flex;
     flex-direction: column;
     background: radial-gradient(#272727, #1f1013);
