@@ -20,3 +20,12 @@ function changeTxt(e) {
     rank === messages.length - 1 ? (rank = 0) : rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
   }, 1000);
 }
+
+function hamburgerMenu() {
+  let x = document.getElementById("links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
